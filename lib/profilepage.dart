@@ -226,7 +226,14 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: MediaQuery.of(context).size.height/3.5,
                   width: MediaQuery.of(context).size.width,
                   margin: EdgeInsets.symmetric(horizontal: 17),
+                  child: Align(
+                    alignment: Alignment.center,
                   child: Wrap(
+                    spacing: 10,
+                      runSpacing: 10,
+                      alignment: WrapAlignment.center,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      direction: Axis.horizontal,
                       children:[
 
                         //post button container
@@ -282,7 +289,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             onPressed: (){
                               Navigator.push(context,
                                 MaterialPageRoute(builder:
-                                    (context)=>Messenger_page(),
+                                    (context)=>Messenger_page( ),
                                 ),
                               );
                             },
@@ -328,7 +335,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               color: Color.fromRGBO(21, 21, 21, 1),
                             ),
                             label: Text(
-                              "Flower",
+                              "Follower",
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w700,
@@ -375,6 +382,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                       ]
                   )
+              ),
               ),
 
             ],
