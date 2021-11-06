@@ -123,7 +123,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
                       // Address and Name container
                       Container(
-                        height: MediaQuery.of(context).size.height/5,
+                        height: MediaQuery.of(context).size.height,
                         width: MediaQuery.of(context).size.width/2,
                         child: Align(
                           alignment: Alignment.centerLeft,
@@ -223,7 +223,7 @@ class _ProfilePageState extends State<ProfilePage> {
               //button container
 
               Container(
-                  height: MediaQuery.of(context).size.height/3.5,
+                  height: MediaQuery.of(context).size.height/4,
                   width: MediaQuery.of(context).size.width,
                   margin: EdgeInsets.symmetric(horizontal: 17),
                   child: Align(
